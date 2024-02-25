@@ -7,6 +7,7 @@ const useSchema = new Schema ({
     Cuenta:{
         type:String,
         required: true,
+        unique: false,
         trim:true,
     },
     Fecha:{
@@ -26,7 +27,8 @@ const useSchema = new Schema ({
     },
 
 },{
-    timestamps:true
+    timestamps:false,
+    versionKey: false
 });
 
 module.exports=useSchema;
