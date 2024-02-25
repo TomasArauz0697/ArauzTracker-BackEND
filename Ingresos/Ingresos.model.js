@@ -6,6 +6,7 @@ mongoose.set('useCreateIndex',true);
 const useSchema = new Schema ({
     Cuenta:{
         type:String,
+        unique:false,
         required: true,
         trim:true,
     },
